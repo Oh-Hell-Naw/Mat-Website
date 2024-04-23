@@ -7,11 +7,37 @@
 	font-family: "Ubuntu", sans-serif;
 	text-decoration: none;
 	scroll-behavior: smooth;
-
 }
 
 body {
 	background-color: #191919;
+}
+
+footer {
+    background-color: #333333;
+    padding: 20px 0;
+    bottom: 9990;
+	display: flex;
+	margin-top: 12.5rem;
+	align-items: ;
+	justify-content: center;
+}
+
+#footer {
+	margin-top: 1rem;
+	margin-bottom:  1rem;
+}
+
+.footertext {
+	color: aliceblue;
+	text-decoration: underline;
+}
+
+.footer-link {
+    font-size: larger;
+    color: aliceblue;
+    text-decoration: underline;
+    margin: 0 10px; /* Add spacing between links */
 }
 
 .offset {
@@ -39,12 +65,26 @@ body {
 	color: #098e64;
 }
 
+#findout {
+	color:aliceblue ;
+	text-decoration: underline;
+	
+}
+
 #heading {
 	font-size: clamp(3rem, 5vw, 5rem);
 	font-weight: 700;
 	margin-bottom: 1vh;
 	margin-top: 1vh;
 	color: #652a3e;
+}
+
+.abtfield {
+	margin-left: 3rem;
+	margin-right: 3rem;
+	border: 1px solid aliceblue;
+	border-radius: 1rem;
+	min-height: 44rem;
 }
 
 .navlogo {
@@ -94,10 +134,10 @@ body {
 	width: 100%;
 	margin-top: 1.5rem;
 	margin-bottom: 1.5rem;
+	opacity: 0.90;
 }
 
 #cards > * {
-
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 	border: 1px solid var(--very-light-gray);
