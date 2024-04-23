@@ -23,6 +23,20 @@ footer {
 	justify-content: center;
 }
 
+@keyframes lmao {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+body.rotate {
+	animation: lmao 3s linear infinite;
+}
+
 #footer {
 	margin-top: 1rem;
 	margin-bottom:  1rem;
