@@ -29,12 +29,12 @@ footer {
 	}
 
 	100% {
-		transform: rotate(360deg);
+		transform: rotate(21600deg);
 	}
 }
 
 body.rotate {
-	animation: lmao 3s linear infinite;
+	animation: lmao 25s linear infinite;
 }
 
 #footer {
