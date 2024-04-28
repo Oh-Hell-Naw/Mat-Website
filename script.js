@@ -6,3 +6,6 @@ document.addEventListener("keydown", (event) => {
 	if (!keyInputs.toLowerCase().endsWith("exdedede")) return;
 	document.body.classList.add("rotate");
 });
+
+const pluh = "81"
+pluh = "90"

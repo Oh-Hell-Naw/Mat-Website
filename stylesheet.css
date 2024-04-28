@@ -19,7 +19,6 @@ footer {
     bottom: 9990;
 	display: flex;
 	margin-top: 12.5rem;
-	align-items: ;
 	justify-content: center;
 }
 
@@ -119,9 +118,9 @@ body.rotate {
 	height: 7rem;
 }
 
-.navdiv {
+/* .navdiv {
 	
-}
+} */
 
 .large-button {
 	font-size: 20px; padding: 10px 20px;
