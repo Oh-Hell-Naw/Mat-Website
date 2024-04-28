@@ -1,0 +1,197 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://dnascanner.de/colorset.css"); */
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	font-family: "Ubuntu", sans-serif;
+	text-decoration: none;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #191919;
+}
+
+footer {
+    background-color: #333333;
+    padding: 20px 0;
+    bottom: 9990;
+	display: flex;
+	margin-top: 12.5rem;
+	align-items: ;
+	justify-content: center;
+}
+
+@keyframes lmao {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(21600deg);
+	}
+}
+
+body.rotate {
+	animation: lmao 25s linear infinite;
+}
+
+#footer {
+	margin-top: 1rem;
+	margin-bottom:  1rem;
+}
+
+.footertext {
+	color: aliceblue;
+	text-decoration: underline;
+}
+
+.footer-link {
+    font-size: larger;
+    color: aliceblue;
+    text-decoration: underline;
+    margin: 0 10px; /* Add spacing between links */
+}
+
+.offset {
+	margin-left: 1rem;
+}
+
+#title {
+	font-size: 2.7rem;
+	font-weight: 700;
+	margin-bottom: 1vh;
+	margin-top: 1vh;
+	margin-left: 1rem;
+	color: #652a3e;
+}
+
+#text {
+	color: aliceblue;
+}
+
+#talkmat {
+	color: #652a3e;
+}
+
+#textgreen {
+	color: #098e64;
+}
+
+#findout {
+	color:aliceblue ;
+	text-decoration: underline;
+	
+}
+
+#heading {
+	font-size: clamp(3rem, 5vw, 5rem);
+	font-weight: 700;
+	margin-bottom: 1vh;
+	margin-top: 1vh;
+	color: #652a3e;
+}
+
+.abtfield {
+	margin-left: 3rem;
+	margin-right: 3rem;
+	border: 1px solid aliceblue;
+	border-radius: 1rem;
+	min-height: 44rem;
+}
+
+.navlogo {
+	display: flex;
+	align-items: center;
+}
+
+.navbar {
+	background-color: #becde0;
+	padding-left: 1em;
+	padding-right: 1em;
+	position: relative;
+}
+
+.img {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	height: 7rem;
+}
+
+.navdiv {
+	
+}
+
+.large-button {
+	font-size: 20px; padding: 10px 20px;
+}
+
+
+
+/* DNAScanner */
+#socials {
+	/* display: flex; */
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-top: 5rem;
+}
+
+#cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	height: 80%;
+	gap: 3.25rem;
+	width: 100%;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+	opacity: 0.90;
+}
+
+#cards > * {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	border: 1px solid var(--very-light-gray);
+	border-radius: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: all 0.3s ease;
+	position: relative;
+}
+
+#cards > *.highlight {
+	background: linear-gradient(45deg, var(--cyan), var(--purple));
+	rotate: 0deg;
+	transition: rotate 2s;
+}
+
+#cards > *.highlight:hover {
+	/* Rotate the background by 45 degrees */
+	rotate: 360deg;
+}
+
+#cards > *:hover {
+	box-shadow: 0 0 2rem var(--shadow);
+	transform: translateY(2.50rem);
+	rotate: 7deg;
+}
+
+.socials-card-icon {
+	max-width: 8.rem;
+	max-height: 8rem;
+}
+
+.socials-card-icon > img {
+	width: 100%;
+}
+
+.socials-card-title {
+	font-size: clamp(1.5rem, 2vw, 2.5rem);
+	font-weight: 700;
+	color: aliceblue;
+}
