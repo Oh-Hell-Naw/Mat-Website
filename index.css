@@ -58,7 +58,6 @@ body.rotate {
 
 #content {
   margin: 10px;
-  margin-left: 1.5rem;
   margin-top: 1.5rem;
   margin-bottom: 2rem;
 }
@@ -87,6 +86,7 @@ body.rotate {
   width: 100%;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+  gap: 8rem;
 }
 #content > #socials > .cards > * {
   width: 15vw;

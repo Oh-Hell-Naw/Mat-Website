@@ -82,7 +82,7 @@ body.rotate {
 #content {
 	margin: 10px;
 	// width: 100%;
-	margin-left: 1.5rem;
+
 	margin-top: 1.5rem;
 	margin-bottom: 2rem;
 
@@ -112,10 +112,10 @@ body.rotate {
 			justify-content: center;
 			align-items: center;
 			height: 80%;
-			// gap: 2rem;
 			width: 100%;
 			margin-top: 1.5rem;
 			margin-bottom: 1.5rem;
+			gap: 8rem;
 
 			& > * {
 				width: 15vw;
