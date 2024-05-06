@@ -86,7 +86,6 @@ body.rotate {
   width: 100%;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  gap: 8rem;
 }
 #content > #socials > .cards > * {
   width: 15vw;
@@ -109,6 +108,10 @@ body.rotate {
   transform: translateY(-0.25rem);
 }
 #content > #maxilla > h1 {
+  color: #652a3e;
+  margin-bottom: 2rem;
+}
+#content > #tv > h1 {
   color: #652a3e;
   margin-bottom: 2rem;
 }

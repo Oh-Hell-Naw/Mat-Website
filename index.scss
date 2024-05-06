@@ -115,7 +115,7 @@ body.rotate {
 			width: 100%;
 			margin-top: 1.5rem;
 			margin-bottom: 1.5rem;
-			gap: 8rem;
+			// gap: 6rem;
 
 			& > * {
 				width: 15vw;
@@ -147,6 +147,13 @@ body.rotate {
 	}
 	
 	& > #maxilla {
+		& > h1 {
+			color: #652a3e;
+			margin-bottom: 2rem;
+		}
+	}
+
+	& > #tv {
 		& > h1 {
 			color: #652a3e;
 			margin-bottom: 2rem;
