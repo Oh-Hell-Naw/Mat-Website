@@ -155,8 +155,7 @@ body.rotate {
 
 	& > #tv {
 		& > h1 {
-			color: #652a3e;
-			margin-bottom: 2rem;
+			color: #098e64;
 		}
 	}
 
@@ -175,6 +174,19 @@ body.rotate {
 			border: 1px solid aliceblue;
 			border-radius: 1rem;
 			min-height: 44rem;
+			justify-content: center;
+			align-items: center;
+			
+			& > img {
+				height: 200px;
+				width: 200px;
+			}
+
+			& > h1 {
+				margin-top: 1rem;
+				margin-left: 1rem;
+				margin-bottom: 3rem;
+			}
 		}
 	}
 }

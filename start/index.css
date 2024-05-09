@@ -1,3 +1,7 @@
+* {
+    color: #fff;
+}
+
 body {
     font-family: Arial, sans-serif;
     padding: 0;
@@ -6,10 +10,9 @@ body {
     display: flex;
     align-items: center;
     margin: 0;
-
 }
 
-div {
+#content {
     display: flex;
 }
 
@@ -44,4 +47,23 @@ input[type="text"] {
     border: 1px solid #cccccc;
     border-radius: 4px;
     font-size: 16px;
+    color: black;
+}
+
+#footer {
+    color: #fff;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 1rem 2rem;
+	background-color: #292929;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+    text-decoration: underline;
 }
