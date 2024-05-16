@@ -15,11 +15,15 @@
   transition: all 0.5s;
 }
 
+@font-face {
+  font-family: "monocraft";
+  src: url("../fonts/monocraft/Monocraft.ttf") format("truetype");
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "monocraft", sans-serif;
   color: #fff;
   text-decoration: none;
   scroll-behavior: smooth;
@@ -36,4 +40,16 @@ body {
 #intro h2 {
   text-align: center;
   display: flex;
+}
+
+#socials {
+  margin-top: 7rem;
+}
+#socials > a {
+  color: #fff;
+}
+#socials > a > img {
+  --imgsize: 12rem;
+  height: var(--imgsize);
+  width: var(--imgsize);
 }
