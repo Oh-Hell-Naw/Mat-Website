@@ -15,6 +15,10 @@
   transition: all 0.5s;
 }
 
+@font-face {
+  font-family: "monocraft";
+  src: url("../fonts/monocraft/Monocraft.ttf") format("truetype");
+}
 * {
   box-sizing: border-box;
   margin: 0;
