@@ -1,3 +1,20 @@
+::-webkit-scrollbar {
+  width: 0.65rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--transparent);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--light-gray);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--black);
+  transition: all 0.5s;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -71,13 +88,13 @@ body.rotate {
   font-weight: 700;
   text-decoration: underline;
 }
-#content > #socials {
+#content > #socials, #content #tv {
   width: 100%;
 }
-#content > #socials > h2 {
+#content > #socials > h2, #content #tv > h2 {
   margin-bottom: 1rem;
 }
-#content > #socials > .cards {
+#content > #socials > .cards, #content #tv > .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -86,9 +103,13 @@ body.rotate {
   width: 100%;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+  gap: 1.09rem;
 }
-#content > #socials > .cards > * {
-  width: 15vw;
+#content > #socials > .cards > *, #content #tv > .cards > * {
+  --marginsize: 3rem;
+  width: auto;
+  margin-left: var(--marginsize);
+  margin-right: var(--marginsize);
   height: 22.5vh;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -99,22 +120,37 @@ body.rotate {
   transition: all 0.3s ease;
   position: relative;
 }
-#content > #socials > .cards > * > img {
+#content > #socials > .cards > * > img, #content #tv > .cards > * > img {
   --size: 7.5rem;
   max-width: var(--size);
   max-height: var(--size);
 }
-#content > #socials > .cards > *:hover {
+#content > #socials > .cards > *:hover, #content #tv > .cards > *:hover {
   transform: translateY(-0.25rem);
 }
 #content > #maxilla > h1 {
   color: #652a3e;
   margin-bottom: 2rem;
 }
-#content > #tv > h1 {
-  color: #098e64;
+#content > #tv {
+  align-content: center;
 }
-#content > #borderheader > h1 {
+#content > #tv > h1, #content > #tv p, #content > #tv h2, #content > #tv a {
+  color: #098e64;
+  align-content: center;
+}
+#content > #tv > .cards {
+  gap: 3rem;
+  align-content: center;
+}
+#content > #tv > .cards > * {
+  background-color: #292929;
+  border-radius: 1rem;
+  align-content: center;
+  width: auto;
+  padding: 0.5rem;
+}
+#content > #borderheader > #content > #borderheader {
   color: #652a3e;
   justify-content: center;
   align-items: center;
@@ -135,6 +171,11 @@ body.rotate {
   width: 200px;
 }
 #content > #borderheader > #borderfield > h1 {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 3rem;
+}
+#content > #borderheader > #borderfield > a > h1 {
   margin-top: 1rem;
   margin-left: 1rem;
   margin-bottom: 3rem;
