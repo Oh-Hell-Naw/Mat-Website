@@ -171,14 +171,40 @@ body.rotate {
   min-height: 44rem;
   justify-content: center;
   align-items: center;
+  display: grid;
 }
 #content #borderfield > img {
   height: 200px;
   width: 200px;
 }
-#content #borderfield > h1 {
+#content #borderfield > h1, #content #borderfield h2 {
   margin-top: 1rem;
   margin-left: 1rem;
+  margin-bottom: 7rem;
+}
+#content #borderfield a > #dnascanner {
+  color: #42098e;
+  text-decoration: underline;
+}
+#content #borderfield a > #fabix {
+  color: rgb(74, 74, 163);
+  text-decoration: underline;
+}
+#content #borderfield a > #flo {
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(90deg, rgb(64, 64, 64) 0%, rgb(255, 255, 255) 100%);
+  text-decoration: underline;
+}
+#content #borderfield a > #nightwolf {
+  color: #00dcf4;
+  border-radius: 50px;
+  text-decoration: underline;
+}
+#content #borderfield > a > img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
 }
 #content #borderfield > a > h1 {
   margin-top: 1rem;
