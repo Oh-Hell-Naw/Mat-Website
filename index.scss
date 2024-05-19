@@ -1,3 +1,5 @@
+@import url("colorset.css");
+
 ::-webkit-scrollbar {
 	width: 0.65rem;
 }
@@ -18,7 +20,7 @@
 @font-face {
 	font-family: 'monocraft';
 	src:url('../fonts/monocraft/Monocraft.ttf') 
-			format('truetype');
+	format('truetype');
 }
   
 
@@ -185,40 +187,39 @@ body.rotate {
 	}
 
 	& > #borderheader {
-		& > & {
-			color:#652a3e;
-			justify-content: center;
-			align-items: center;
-			margin-bottom: 2rem;
+		color:#652a3e;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 2rem;
+	}
+
+
+	#borderfield {
+		margin-top: 2rem;
+		margin-left: 3rem;
+		margin-right: 3rem;
+		margin-bottom: 5rem;
+		border: 1px solid aliceblue;
+		border-radius: 1rem;
+		min-height: 44rem;
+		justify-content: center;
+		align-items: center;
+		
+		& > img {
+			height: 200px;
+			width: 200px;
 		}
-
-		& > #borderfield {
-			margin-left: 3rem;
-			margin-right: 3rem;
-			margin-bottom: 5rem;
-			border: 1px solid aliceblue;
-			border-radius: 1rem;
-			min-height: 44rem;
-			justify-content: center;
-			align-items: center;
-			
-			& > img {
-				height: 200px;
-				width: 200px;
-			}
-
+		
+		& > h1 {
+			margin-top: 1rem;
+			margin-left: 1rem;
+			margin-bottom: 3rem;
+		}
+		& > a {
 			& > h1 {
 				margin-top: 1rem;
 				margin-left: 1rem;
 				margin-bottom: 3rem;
-			}
-
-			& > a {
-				& > h1 {
-					margin-top: 1rem;
-					margin-left: 1rem;
-					margin-bottom: 3rem;
-				}
 			}
 		}
 	}
