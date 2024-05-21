@@ -89,6 +89,10 @@ body.rotate {
 #content > .bio > * {
   color: #652a3e;
 }
+#content > .bio > * > a {
+  color: #652a3e;
+  text-decoration: underline;
+}
 #content > .bio > a {
   font-weight: 700;
   text-decoration: underline;
@@ -228,4 +232,14 @@ body.rotate {
 }
 #footer > * {
   text-decoration: underline;
+}
+
+#temptrnum {
+  color: #191919;
+  font-size: large;
+  height: 3rem;
+  padding: 10px;
+  border-radius: 1rem;
+  border: dotted;
+  background-color: #292929;
 }
