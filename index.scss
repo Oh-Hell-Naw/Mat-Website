@@ -1,293 +1,310 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 ::-webkit-scrollbar {
-	width: 0.65rem;
+  width: 0.65rem;
 }
 
 ::-webkit-scrollbar-track {
-	background-color: var(--transparent);
+  background-color: var(--transparent);
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: var(--light-gray);
+  background-color: var(--light-gray);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background-color: var(--black);
-	transition: all 0.5s;
+  background-color: var(--black);
+  transition: all 0.5s;
 }
 
 @font-face {
-	font-family: 'monocraft';
-	src:url('../fonts/monocraft/Monocraft.ttf') 
-	format('truetype');
+  font-family: "monocraft";
+  src: url("../fonts/monocraft/Monocraft.ttf") format("truetype");
 }
-  
 
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	font-family: sans-serif;
-	color: #fff;
-	text-decoration: none;
-	scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #fff;
+  text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 body {
-	background-color: #191919;
+  background-color: #191919;
 }
 
 @keyframes lmao {
-	0% {
-		transform: rotate(0deg);
-	}
+  0% {
+    transform: rotate(0deg);
+  }
 
-	100% {
-		transform: rotate(21600deg);
-	}
+  100% {
+    transform: rotate(21600deg);
+  }
 }
 
 body.rotate {
-	animation: lmao 25s linear infinite;
+  animation: lmao 25s linear infinite;
 }
 
 #navbar {
-	position: relative;
-	margin: 7px;
-	display: flex;
-	align-items: center;
-	padding: 1rem 2rem;	//this and height was disabled for some reason 
-	height: 8rem;
-	background-color: #becde0;
-	color: #652a3e;
-	padding-left: 1em;
-	padding-right: 1em;
+  position: relative;
+  margin: 7px;
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem; //this and height was disabled for some reason
+  height: 8rem;
+  background-color: #becde0;
+  color: #652a3e;
+  padding-left: 1em;
+  padding-right: 1em;
 
-	& > .profile-picture {
-		display: flex;
-		margin-right: 1rem;
-		margin-top: 0.1em;
-		margin-bottom: 0.1rem;
+  & > .profile-picture {
+    display: flex;
+    margin-right: 1rem;
+    margin-top: 0.1em;
+    margin-bottom: 0.1rem;
 
-		& > img {
-			height: 7rem;
-			border-radius: 50%;
-			display: flex;
-			align-items: center;
-			margin-top: 0.5em;
-			margin-bottom: 0.5em;
-		}
-	}
+    & > img {
+      height: 7rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+  }
 
-	& > .header {
-		font-size: 2.7rem;
-		font-weight: 700;
-		color: #652a3e;
-	}
+  & > .header {
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: #652a3e;
+  }
 }
 
 #content {
-	margin: 10px;
-	// width: 100%;
-	margin-top: 1.5rem;
-	margin-bottom: 2rem;
+  margin: 10px;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  // width: 100%;
 
-	& > .bio {
-		& > * {
-			color: #652a3e;
+  & > .bio {
+    & > h1 {
+      color: #652a3e;
+    }
 
-			& > a {
-				color: #652a3e;
-				text-decoration: underline;
-			}
-		}	
+    & > h2 {
+      & > a {
+        text-decoration: underline;
+        color: #098e64;
+      }
+    }
+  }
 
-		& > a {
-			font-weight: 700;
-			text-decoration: underline;
-		}
+  & > .quickbio {
+    margin-bottom: 1rem;
+    & > * {
+      color: #652a3e;
 
-		margin-bottom: 1rem;
-	}
+      & > a {
+        color: #652a3e;
+        text-decoration: underline;
+      }
+    }
 
-	& > #socials, #tv {
-		width: 100%;
+    & > a {
+      font-weight: 700;
+      text-decoration: underline;
+    }
+  }
 
-		& > h2 {
-			margin-bottom: 1rem;
-		}
+  & > #socials,
+  #buttons {
+    width: 100%;
 
-		& > .cards {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			align-items: center;
-			height: 80%;
-			width: 100%;
-			margin-top: 1.5rem;
-			margin-bottom: 1.5rem;
-			gap: 1.09rem;
+    & > h2 {
+      margin-bottom: 1rem;
+    }
 
-			// i need to add a thing that makes the spacing more when not on desktop rn its set to
+    & > .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: 80%;
+      width: 100%;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      gap: 1.09rem;
 
-			& > * {
-				--marginsize: 3rem;
-				width: auto;
-				margin-left: var(--marginsize);
-				margin-right: var(--marginsize);
-				height: 22.5vh;
-				padding-top: 1rem;
-				padding-bottom: 1rem;
-				// background-color: #292929;
-				// border-radius: 1rem;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				flex-direction: column;
-				transition: all 0.3s ease;
-				position: relative;
+      // i need to add a thing that makes the spacing more when not on desktop rn its set to
 
-				& > img {
-					--size: 7.5rem;
-					max-width: var(--size);
-					max-height: var(--size);
-				}
+      & > * {
+        --marginsize: 3rem;
+        width: auto;
+        margin-left: var(--marginsize);
+        margin-right: var(--marginsize);
+        height: 22.5vh;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        // background-color: #292929;
+        // border-radius: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: all 0.3s ease;
+        position: relative;
 
-				&:hover {
-					// background-color: #242424;
-					// box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
-					transform: translateY(-0.25rem);
-				}
-			}
-		}
-	}
-	
-	& > #maxilla {
-		& > h1 {
-			color: #652a3e;
-			margin-bottom: 2rem;
-		}
-	}
+        & > img {
+          --size: 7.5rem;
+          max-width: var(--size);
+          max-height: var(--size);
+        }
 
-	& > #tv {
-		align-content: center;
-		& > h1, p, h2, a {
-			color: #098e64;
-			align-content: center;
-		}
+        &:hover {
+          // background-color: #242424;
+          // box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+          transform: translateY(-0.25rem);
+        }
+      }
+    }
+  }
 
-		& > .cards {
-			gap: 3rem;
-			align-content: center;
-			& > * {
-				background-color: #292929;
-				border-radius: 1rem;
-				align-content: center;
-				width: auto;
-				padding: 0.5rem;
-			}
-		}
-	}
+  & > #maxilla {
+    & > h1 {
+      color: #652a3e;
+      margin-bottom: 2rem;
+    }
+  }
 
-	& > #borderheader {
-		color:#652a3e;
-		justify-content: center;
-		align-items: center;
-		margin-bottom: 2rem;
-	}
+  & > #buttons {
+    align-content: center;
+    & > h1,
+    p,
+    h2,
+    a {
+      color: #098e64;
+      align-content: center;
+    }
 
+    & > .cards {
+      gap: 3rem;
+      align-content: center;
+      & > * {
+        background-color: #292929;
+        border-radius: 1rem;
+        align-content: center;
+        width: auto;
+        padding: 0.5rem;
+      }
+    }
+  }
 
-	#borderfield {
-		margin-top: 2rem;
-		margin-left: 3rem;
-		margin-right: 3rem;
-		margin-bottom: 5rem;
-		border: 1px solid aliceblue;
-		border-radius: 1rem;
-		min-height: 44rem;
-		justify-content: center;
-		align-items: center;
-		display: grid;
-		
-		
-		& > img {
-			height: 200px;
-			width: 200px;
-		}
-		
-		& > h1, h2 {
-			margin-top: 1rem;
-			margin-left: 1rem;
-			margin-bottom: 7rem;
+  & > #borderheader {
+    color: #652a3e;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
 
-		}
+  #borderfield {
+    margin-top: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 5rem;
+    border: 1px solid aliceblue;
+    border-radius: 1rem;
+    min-height: 44rem;
+    justify-content: center;
+    align-items: center;
+    display: grid;
 
-		a > #dnascanner{
-			color:#42098e;
-			text-decoration: underline;
-		}
+    & > img {
+      height: 200px;
+      width: 200px;
+    }
 
-		a > #fabix {
-			color: rgb(74, 74, 163);
-			text-decoration: underline;
-		}
+    & > h1,
+    h2 {
+      margin-top: 1rem;
+      margin-left: 1rem;
+      margin-bottom: 7rem;
+    }
 
-		a > #flo{
-			background-clip: text;
-			-webkit-text-fill-color: transparent;
-			background-image: linear-gradient(90deg, rgba(64,64,64,1) 0%, rgba(255,255,255,1) 100%);
-			text-decoration: underline;
-		}
+    a > #dnascanner {
+      color: #42098e;
+      text-decoration: underline;
+    }
 
-		a > #nightwolf {
-			color: #00dcf4; // Nightwolf wird Sanktioniert :D														ich verschicke dein cursor 
-			border-radius: 50px;
-			text-decoration: underline;
-		}
+    a > #fabix {
+      color: rgb(74, 74, 163);
+      text-decoration: underline;
+    }
 
-		& > a {
+    a > #flo {
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: linear-gradient(
+        90deg,
+        rgba(64, 64, 64, 1) 0%,
+        rgba(255, 255, 255, 1) 100%
+      );
+      text-decoration: underline;
+    }
 
-			& > img {
-				width: 100px;
-				height: 100px;
-				border-radius: 50px;
-			}
+    a > #nightwolf {
+      color: #00dcf4; // Nightwolf wird Sanktioniert :D														ich verschicke dein cursor
+      border-radius: 50px;
+      text-decoration: underline;
+    }
 
-			& > h1 {
-				margin-top: 1rem;
-				margin-left: 1rem;
-			}
-		}
-	}
+    & > a {
+      & > img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+      }
+
+      & > h1 {
+        margin-top: 1rem;
+        margin-left: 1rem;
+      }
+    }
+  }
+  
+
 }
 
 #footer {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-bottom: 10px;
-	padding: 1rem 2rem;
-	background-color: #292929;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 1rem 2rem;
+  background-color: #292929;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 
-	& > * {
-		text-decoration: underline;
-	}
+  & > * {
+    text-decoration: underline;
+  }
 }
 
 #temptrnum {
-	color: #191919;
-	font-size: large;
-	height: 3rem;
-	padding: 10px;
-	border-radius: 1rem;
-	border: dotted;
-	background-color: #292929;
+  color: #191919;
+  font-size: large;
+  height: 3rem;
+  padding: 10px;
+  border-radius: 1rem;
+  border: dotted;
+  background-color: #292929;
 }

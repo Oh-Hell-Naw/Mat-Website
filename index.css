@@ -83,27 +83,37 @@ body.rotate {
   margin-top: 1.5rem;
   margin-bottom: 2rem;
 }
-#content > .bio {
-  margin-bottom: 1rem;
-}
-#content > .bio > * {
+#content > .bio > h1 {
   color: #652a3e;
 }
-#content > .bio > * > a {
+#content > .bio > h2 > a {
+  text-decoration: underline;
+  color: #098e64;
+}
+#content > .quickbio {
+  margin-bottom: 1rem;
+}
+#content > .quickbio > * {
+  color: #652a3e;
+}
+#content > .quickbio > * > a {
   color: #652a3e;
   text-decoration: underline;
 }
-#content > .bio > a {
+#content > .quickbio > a {
   font-weight: 700;
   text-decoration: underline;
 }
-#content > #socials, #content #tv {
+#content > #socials,
+#content #buttons {
   width: 100%;
 }
-#content > #socials > h2, #content #tv > h2 {
+#content > #socials > h2,
+#content #buttons > h2 {
   margin-bottom: 1rem;
 }
-#content > #socials > .cards, #content #tv > .cards {
+#content > #socials > .cards,
+#content #buttons > .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -114,7 +124,8 @@ body.rotate {
   margin-bottom: 1.5rem;
   gap: 1.09rem;
 }
-#content > #socials > .cards > *, #content #tv > .cards > * {
+#content > #socials > .cards > *,
+#content #buttons > .cards > * {
   --marginsize: 3rem;
   width: auto;
   margin-left: var(--marginsize);
@@ -129,30 +140,35 @@ body.rotate {
   transition: all 0.3s ease;
   position: relative;
 }
-#content > #socials > .cards > * > img, #content #tv > .cards > * > img {
+#content > #socials > .cards > * > img,
+#content #buttons > .cards > * > img {
   --size: 7.5rem;
   max-width: var(--size);
   max-height: var(--size);
 }
-#content > #socials > .cards > *:hover, #content #tv > .cards > *:hover {
+#content > #socials > .cards > *:hover,
+#content #buttons > .cards > *:hover {
   transform: translateY(-0.25rem);
 }
 #content > #maxilla > h1 {
   color: #652a3e;
   margin-bottom: 2rem;
 }
-#content > #tv {
+#content > #buttons {
   align-content: center;
 }
-#content > #tv > h1, #content > #tv p, #content > #tv h2, #content > #tv a {
+#content > #buttons > h1,
+#content > #buttons p,
+#content > #buttons h2,
+#content > #buttons a {
   color: #098e64;
   align-content: center;
 }
-#content > #tv > .cards {
+#content > #buttons > .cards {
   gap: 3rem;
   align-content: center;
 }
-#content > #tv > .cards > * {
+#content > #buttons > .cards > * {
   background-color: #292929;
   border-radius: 1rem;
   align-content: center;
@@ -181,7 +197,8 @@ body.rotate {
   height: 200px;
   width: 200px;
 }
-#content #borderfield > h1, #content #borderfield h2 {
+#content #borderfield > h1,
+#content #borderfield h2 {
   margin-top: 1rem;
   margin-left: 1rem;
   margin-bottom: 7rem;
