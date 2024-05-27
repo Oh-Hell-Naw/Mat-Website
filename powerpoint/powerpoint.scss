@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: aliceblue;
+    margin-bottom: 25%;
+}
+
+#divcenter {
+  justify-content: center;
+  display: grid;
+  align-items: center;
+  
+}
+
+#divcenter2 {
+  justify-content: center;
+  display: grid;
+  align-items: center;
+  margin-left: 10%;
+}
+
+#mainheading {
+  margin-top: 25%;
+  font-size: 7rem;
+}
+
+#mainheading2 {
+  margin-top: 10%;
+  font-size: 7rem;
+
+}
