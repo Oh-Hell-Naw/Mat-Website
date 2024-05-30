@@ -122,7 +122,7 @@ body.rotate {
   }
 
   & > #socials,
-  #buttons {
+  #buttons, #projects {
     width: 100%;
 
     & > h2 {
@@ -275,8 +275,28 @@ body.rotate {
       }
     }
   }
-  
 
+  .articles {
+    margin-left: 1rem;
+    display: grid;
+
+    & > a {
+      padding: 1rem 2rem 1rem 2rem;
+      border-radius: 1rem;
+      background-color: #652a3e;
+      transition: all 0.3s ease;
+
+      & > h3 {
+        text-decoration: underline;
+      }
+
+      &:hover {
+        background-color: #703d4e;
+        box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+        transform: translateY(-0.25rem);
+      }
+    }
+  }
 }
 
 #footer {

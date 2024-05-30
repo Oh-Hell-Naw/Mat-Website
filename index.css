@@ -105,15 +105,15 @@ body.rotate {
   text-decoration: underline;
 }
 #content > #socials,
-#content #buttons {
+#content #buttons, #content #projects {
   width: 100%;
 }
 #content > #socials > h2,
-#content #buttons > h2 {
+#content #buttons > h2, #content #projects > h2 {
   margin-bottom: 1rem;
 }
 #content > #socials > .cards,
-#content #buttons > .cards {
+#content #buttons > .cards, #content #projects > .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -125,7 +125,7 @@ body.rotate {
   gap: 1.09rem;
 }
 #content > #socials > .cards > *,
-#content #buttons > .cards > * {
+#content #buttons > .cards > *, #content #projects > .cards > * {
   --marginsize: 3rem;
   width: auto;
   margin-left: var(--marginsize);
@@ -141,13 +141,13 @@ body.rotate {
   position: relative;
 }
 #content > #socials > .cards > * > img,
-#content #buttons > .cards > * > img {
+#content #buttons > .cards > * > img, #content #projects > .cards > * > img {
   --size: 7.5rem;
   max-width: var(--size);
   max-height: var(--size);
 }
 #content > #socials > .cards > *:hover,
-#content #buttons > .cards > *:hover {
+#content #buttons > .cards > *:hover, #content #projects > .cards > *:hover {
   transform: translateY(-0.25rem);
 }
 #content > #maxilla > h1 {
@@ -230,6 +230,24 @@ body.rotate {
 #content #borderfield > a > h1 {
   margin-top: 1rem;
   margin-left: 1rem;
+}
+#content .articles {
+  margin-left: 1rem;
+  display: grid;
+}
+#content .articles > a {
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 1rem;
+  background-color: #652a3e;
+  transition: all 0.3s ease;
+}
+#content .articles > a > h3 {
+  text-decoration: underline;
+}
+#content .articles > a:hover {
+  background-color: #703d4e;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+  transform: translateY(-0.25rem);
 }
 
 #footer {

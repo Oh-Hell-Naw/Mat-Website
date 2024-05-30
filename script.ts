@@ -39,3 +39,10 @@ function loadNavbar() {
 }
 
 document.addEventListener("DOMContentLoaded", loadNavbar);
+
+function introduction() {
+  let Name = "my name is Matteo,";
+  let age = "im 16 years old.";
+  let bike = "and i like bike :3";
+  console.log(Name + age + bike);
+}
