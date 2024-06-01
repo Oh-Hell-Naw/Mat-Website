@@ -1,12 +1,12 @@
-const loadHead = async () => {
-    try {
-        const response = await fetch('/imports/head.html');
-        const text = await response.text();
-        document.querySelector("#head-placeholder").innerHTML = text;
-    } catch (error) {
-        console.error('Error loading head:', error);
-    }
-}
+// const loadHead = async () => {
+//     try {
+//         const response = await fetch('/imports/head.html');
+//         const text = await response.text();
+//         document.querySelector("#head-placeholder").innerHTML = text;
+//     } catch (error) {
+//         console.error('Error loading head:', error);
+//     }
+// }
 
 const loadFooter = async () => {
     try {
@@ -29,7 +29,8 @@ const loadNavbar = async () => {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    loadHead();
+    // loadHead();
     loadFooter();
     loadNavbar();
+    // document.querySelector('.element').classList.add('loaded');
 });
