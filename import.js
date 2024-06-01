@@ -1,24 +1,35 @@
-// load navbar
-function loadNavbar() {
-    fetch('../imports/navbar.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('navbar-placeholder').innerHTML = data;
-        })
-        .catch(error => console.error('Error loading the navbar:', error));
+const loadHead = async () => {
+    try {
+        const response = await fetch('/imports/head.html');
+        const text = await response.text();
+        document.querySelector("#head-placeholder").innerHTML = text;
+    } catch (error) {
+        console.error('Error loading head:', error);
+    }
 }
 
-document.addEventListener('DOMContentLoaded', loadNavbar);
-
-// load footer
-
-function loadFooter() {
-    fetch('../imports/footer.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('footer-placeholder').innerHTML = data;
-        })
-        .catch(error => console.error('Error loading the navbar:', error));
+const loadFooter = async () => {
+    try {
+        const response = await fetch('/imports/footer.html');
+        const text = await response.text();
+        document.querySelector("#footer-placeholder").innerHTML = text;
+    } catch (error) {
+        console.error('Error loading footer:', error);
+    }
 }
 
-document.addEventListener('DOMContentLoaded', loadFooter);
+const loadNavbar = async () => {
+    try {
+        const response = await fetch('/imports/navbar.html');
+        const text = await response.text();
+        document.querySelector("#navbar-placeholder").innerHTML = text;
+    } catch (error) {
+        console.error('Error loading navbar:', error);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    loadHead();
+    loadFooter();
+    loadNavbar();
+});
