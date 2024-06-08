@@ -134,7 +134,7 @@ body.rotate {
   width: auto;
   margin-left: var(--marginsize);
   margin-right: var(--marginsize);
-  height: 22.5vh;
+  height: 18vh;
   padding-top: 1rem;
   padding-bottom: 1rem;
   display: flex;
@@ -163,10 +163,7 @@ body.rotate {
 #content > #buttons {
   align-content: center;
 }
-#content > #buttons > h1,
-#content > #buttons p,
-#content > #buttons h2,
-#content > #buttons a {
+#content > #buttons > h1, #content > #buttons > p, #content > #buttons > h2, #content > #buttons > a {
   color: #098e64;
   align-content: center;
 }
@@ -179,7 +176,7 @@ body.rotate {
   border-radius: 1rem;
   align-content: center;
   width: auto;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 #content > #borderheader {
   color: #652a3e;

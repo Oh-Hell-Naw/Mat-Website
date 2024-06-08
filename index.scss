@@ -148,7 +148,7 @@ body.rotate {
         width: auto;
         margin-left: var(--marginsize);
         margin-right: var(--marginsize);
-        height: 22.5vh;
+        height: 18vh;
         padding-top: 1rem;
         padding-bottom: 1rem;
         // background-color: #292929;
@@ -185,9 +185,9 @@ body.rotate {
   & > #buttons {
     align-content: center;
     & > h1,
-    p,
-    h2,
-    a {
+    & > p,
+    & > h2,
+    & > a {
       color: #098e64;
       align-content: center;
     }
@@ -200,7 +200,7 @@ body.rotate {
         border-radius: 1rem;
         align-content: center;
         width: auto;
-        padding: 0.5rem;
+        padding: 1rem;
       }
     }
   }
@@ -310,7 +310,7 @@ body.rotate {
       width: 40%;
     }
 
-    h2 { 
+    h2 {
       margin-bottom: 0.5rem;
     }
     h1 > a,
