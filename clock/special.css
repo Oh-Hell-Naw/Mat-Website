@@ -1,0 +1,43 @@
+* {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+html,
+body,
+#clockbody {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: black;
+}
+
+#clockbody {
+    display: flex;
+    flex-direction: row;
+}
+
+.segment {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    outline: 1px black solid;
+}
+
+.text {
+    font-size: 45rem;
+}
+
+#segment-0,
+#segment-2 {
+    margin-top: -3rem;
+}

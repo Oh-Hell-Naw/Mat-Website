@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+    <link rel="stylesheet" href="./special.css" />
+  </head>
+
+  <body>
+    <div id="clockbody">
+      <p id="clock">00:00</p>
+    </div>
+
+    <script>
+      const clockElement = document.querySelector("#clock");
+
+      const updateClock = () => {
+        const time = new Date().toLocaleTimeString("de-DE", {
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+        });
+
+        clockElement.innerHTML = time;
+
+        setTimeout(updateClock, 1000);
+      };
+
+      updateClock();
+    </script>
+  </body>
+</html>
