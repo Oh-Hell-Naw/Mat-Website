@@ -30,3 +30,9 @@ const updateClock = () => {
 };
 
 updateClock();
+
+if (!localStorage.getItem("test")) {
+	document.body.addEventListener("click", (event) => {
+		document.body.requestFullscreen();
+	});
+}
