@@ -1,0 +1,3 @@
+this is for file nesting
+
+root _redirects, tsconfig.json, *.md, import.js
