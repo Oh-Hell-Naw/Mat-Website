@@ -1,4 +1,5 @@
 * {
+    font: 1.5rem sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
     margin: 0;
@@ -34,7 +35,7 @@ body {
 }
 
 .text {
-    font-size: 45rem;
+    font-size: 60rem;
 }
 
 #segment-0,
